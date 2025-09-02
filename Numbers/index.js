@@ -62,6 +62,9 @@ console.log(parseFloat("-.5"));        // Returns -0.5
 */
 
 /*
+
+Exercise
+
 Consider this scenario: You have a shopping cart with 6 items in it.  
 The total price of all the items combined is $78.50 You have a coupon that gets you 25% off of the total price. 
 After the coupon is applied, taxes will be applied at a rate of 7.75% of the total cost (cost after coupon).
@@ -71,27 +74,28 @@ Perform addition operations to get the total price of all 6 items and store it i
 Create a variable for the 25% coupon
 Create a variable called priceAfterDiscount and store the total price after the 25% discount has been applied (should equal around $58.87)
 Create a variable called taxes that stores the total taxes to be charged using the tax rate (should equal around $4.56)
-Create a variable called finalPrice that applies the 7.75% tax rate to priceAfter Discount.  (should equal around $63.43)
+Create a variable called finalPrice that applies the 7.75% tax rate to priceAfterDiscount.  (should equal around $63.43)
 
 */
 
-var item = 12;
-var item1 = 12;
-var item2 = 12;
-var item3 = 12;
-var item4 = 14;
-var item5 = 16.5;
+var num1 = 14;
+var num2 = 13.5;
+var num3 = 14;
+var num4 = 16;
+var num5 = 11;
+var num6 = 10;
 
-var totalPrice = 12 + 12 + 12 + 12 + 14 + 16.5;
-console.log("Total Price: " + totalPrice);
+var total = num1 + num2 + num3 + num4 + num5 + num6;
+console.log(total);
 
-var discountPrice = 0.25;
-var priceAfterDiscount = totalPrice - totalPrice * discountPrice;
-console.log("Price After Discount: " + priceAfterDiscount);
+var coupon = 0.25;
+var tax = 0.0775;
 
-var taxRate = 0.0775;
-var taxes = priceAfterDiscount * taxRate;
-console.log("Taxes: " + taxes);
-
+var discount = total * coupon;
+console.log(discount);
+var priceAfterDiscount = total - discount;
+console.log(priceAfterDiscount);
+var taxes = priceAfterDiscount * tax;
+console.log(taxes);
 var finalPrice = priceAfterDiscount + taxes;
-console.log("Final Price: " + finalPrice);
+console.log(finalPrice);
